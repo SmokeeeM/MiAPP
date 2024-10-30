@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Mi Aplicación</string>
+    <string name="toast_message">Mensaje a mostrar</string>
+</resources>

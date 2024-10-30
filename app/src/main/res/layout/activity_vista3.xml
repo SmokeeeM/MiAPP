@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vista3Activity">
+
+    <!-- Imagen del chimpancé -->
+
+    <!-- CardView para información del chimpancé -->
+
+    <!-- Botón para retroceder a Vista2Activity -->
+
+    <ImageView
+        android:id="@+id/backgroundImageChimp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/chimpance"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/infoCardChimp"
+        android:layout_width="162dp"
+        android:layout_height="49dp"
+        android:layout_margin="16dp"
+        android:backgroundTint="#80000000"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundImageChimp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023">
+
+        <TextView
+            android:id="@+id/titleChimp"
+            android:layout_width="180dp"
+            android:layout_height="54dp"
+            android:padding="8dp"
+            android:text="Chimpancé"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            android:textColor="@android:color/white" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/backButtonToVista2"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="292dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="428dp"
+        android:backgroundTint="#E3E3E3"
+        android:text="Volver a la Enciclopedia de simios"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/infoCardChimp"
+        app:layout_constraintVertical_bias="0.807"
+        app:rippleColor="#000000" />
+
+    <TextView
+        android:id="@+id/descriptionChimp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:padding="8dp"
+        android:text="Los chimpancés son nuestros parientes más cercanos en el reino animal. Son extremadamente inteligentes y tienen una estructura social compleja..."
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundImageChimp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
