@@ -42,20 +42,6 @@
             android:textColor="@android:color/white" />
     </com.google.android.material.card.MaterialCardView>
 
-    <!-- Descripción original -->
-    <TextView
-        android:id="@+id/description2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:text="Los orangutanes, conocidos por su distintivo pelaje rojo, son los mamíferos arbóreos más grandes. Haz clic abajo para obtener más información."
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#FFFFFF"
-        android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/infoCard" />
-
     <!-- Botón para navegar a Vista2Activity -->
     <Button
         android:id="@+id/infoButton2"
@@ -67,7 +53,7 @@
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/description2" />
+        app:layout_constraintTop_toBottomOf="@id/infoCard" />
 
     <!-- Botón para regresar al Formulario -->
     <Button

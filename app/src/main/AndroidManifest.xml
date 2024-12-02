@@ -9,9 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
 
-        <!-- Actividad principal -->
+        <!-- Nueva actividad inicial -->
         <activity
-            android:name=".MainActivity"
+            android:name=".FormActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,13 +19,10 @@
             </intent-filter>
         </activity>
 
-        <!-- Actividad secundaria - Vista2 -->
-        <activity android:name=".Vista2Activity"
-            android:exported="false" />
-
-        <!-- Actividad terciaria - Vista3 (Chimpancé) -->
-        <activity android:name=".Vista3Activity"
-            android:exported="false" />
-
+        <!-- Actividad original -->
+        <activity android:name=".MainActivity" android:exported="true" />
+        <activity android:name=".Vista2Activity" android:exported="true" />
+        <activity android:name=".Vista3Activity" android:exported="false" />
+        <activity android:name=".ViewDataActivity" android:exported="true" />
     </application>
 </manifest>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Campo de entrada: Nombre -->
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:inputType="textPersonName" />
+
+    <!-- Campo de entrada: Correo -->
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo Electrónico"
+        android:inputType="textEmailAddress" />
+
+    <!-- Campo de entrada: Contraseña -->
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword" />
+
+    <!-- Botón para guardar datos -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar" />
+
+    <!-- Botón para ver datos -->
+    <Button
+        android:id="@+id/btnViewData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Datos" />
+
+    <!-- Botón para ir a MainActivity -->
+    <Button
+        android:id="@+id/btnGoToMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ir a la siguiente vista" />
+</LinearLayout>
